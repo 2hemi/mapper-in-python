@@ -1,8 +1,6 @@
-#f = open(r'purchases.txt')
+f = open(r'purchases.txt')
 
-import sys
-
-for i in sys.stdin :
+for i in f :
 	data = i.strip().split('\t')
 
 	if len(data) == 6:
